@@ -1,0 +1,945 @@
+description: 'Short-form video content',
+               cost: 'Free',
+               roi: 'Very High',
+               integrations: ['CapCut', 'Instagram'],
+               alternatives: ['Instagram Reels', 'YouTube Shorts'],
+               tips: 'Jump on trends early for viral potential',
+               launchUrl: 'https://tiktok.com'
+           },
+           'Facebook': {
+               category: 'social',
+               frequency: 'Daily',
+               description: 'Community and marketing',
+               cost: 'Free',
+               roi: 'Medium',
+               integrations: ['Instagram', 'Meta Business'],
+               alternatives: ['LinkedIn', 'Twitter'],
+               tips: 'Focus on groups for engagement',
+               launchUrl: 'https://facebook.com'
+           },
+           'YouTube': {
+               category: 'social',
+               frequency: 'Daily',
+               description: 'Long-form video content',
+               cost: 'Free',
+               roi: 'High',
+               integrations: ['Google Ads', 'Analytics'],
+               alternatives: ['Vimeo', 'Dailymotion'],
+               tips: 'Optimize thumbnails and titles for CTR',
+               launchUrl: 'https://youtube.com'
+           },
+           'X (Twitter)': {
+               category: 'social',
+               frequency: 'Daily',
+               description: 'Real-time engagement and news',
+               cost: 'Free/$8/mo',
+               roi: 'Medium',
+               integrations: ['Zapier', 'Buffer'],
+               alternatives: ['Threads', 'Mastodon'],
+               tips: 'Use threads for detailed content',
+               launchUrl: 'https://x.com'
+           },
+
+           // Business Operations - Daily Drivers
+           'Asana': {
+               category: 'business',
+               frequency: 'Daily',
+               description: 'Primary project management',
+               cost: '$13/mo',
+               roi: 'High',
+               integrations: ['Slack', 'Google Drive', 'Zapier'],
+               alternatives: ['Monday', 'Trello'],
+               tips: 'Use custom fields for tracking',
+               launchUrl: 'https://asana.com'
+           },
+           'JotForm': {
+               category: 'business',
+               frequency: 'Daily',
+               description: 'Form creation and data collection',
+               cost: '$34/mo',
+               roi: 'High',
+               integrations: ['Zapier', 'Google Sheets', 'PayPal'],
+               alternatives: ['Typeform', 'Google Forms'],
+               tips: 'Use conditional logic for smart forms',
+               launchUrl: 'https://jotform.com'
+           },
+           'OneDrive': {
+               category: 'business',
+               frequency: 'Daily',
+               description: 'File storage and collaboration',
+               cost: 'Included with Office',
+               roi: 'High',
+               integrations: ['Office 365', 'Windows'],
+               alternatives: ['Google Drive', 'Dropbox'],
+               tips: 'Use Files On-Demand to save space',
+               launchUrl: 'https://onedrive.com'
+           },
+           'Envato Elements': {
+               category: 'business',
+               frequency: 'Daily',
+               description: 'Creative assets and templates',
+               cost: '$16.50/mo',
+               roi: 'High',
+               integrations: ['Adobe', 'Canva', 'WordPress'],
+               alternatives: ['Creative Market', 'Freepik'],
+               tips: 'Download assets for future use',
+               launchUrl: 'https://elements.envato.com'
+           },
+
+           // PART-TIME/NICHE USE TOOLS
+           // AI & Content Enhancement - Part-time
+           'Google Cloud Vertex AI': {
+               category: 'ai',
+               frequency: 'Part-time',
+               description: 'Advanced AI model development',
+               cost: 'Usage-based',
+               roi: 'Medium',
+               integrations: ['TensorFlow', 'PyTorch'],
+               alternatives: ['AWS SageMaker', 'Azure ML'],
+               tips: 'Start with AutoML for quick results',
+               launchUrl: 'https://cloud.google.com/vertex-ai'
+           },
+           'Google AI Studio': {
+               category: 'ai',
+               frequency: 'Part-time',
+               description: 'AI experimentation platform',
+               cost: 'Free',
+               roi: 'Medium',
+               integrations: ['Gemini', 'PaLM'],
+               alternatives: ['OpenAI Playground', 'Colab'],
+               tips: 'Test prompts before production use',
+               launchUrl: 'https://makersuite.google.com'
+           },
+           'Gemini (Google)': {
+               category: 'ai',
+               frequency: 'Part-time',
+               description: 'Google\'s AI assistant for specific tasks',
+               cost: '$20/mo',
+               roi: 'Medium',
+               integrations: ['Google Workspace', 'Bard'],
+               alternatives: ['ChatGPT', 'Claude'],
+               tips: 'Use for Google-specific integrations',
+               launchUrl: 'https://gemini.google.com'
+           },
+           'Relevance AI': {
+               category: 'ai',
+               frequency: 'Part-time',
+               description: 'AI workflow automation',
+               cost: '$19/mo',
+               roi: 'Medium',
+               integrations: ['APIs', 'Webhooks'],
+               alternatives: ['Zapier AI', 'Make.com'],
+               tips: 'Build AI chains for complex tasks',
+               launchUrl: 'https://relevance.ai'
+           },
+           'Grammarly': {
+               category: 'ai',
+               frequency: 'Part-time',
+               description: 'Writing enhancement and grammar checking',
+               cost: '$12/mo',
+               roi: 'Medium',
+               integrations: ['Chrome', 'Word', 'Google Docs'],
+               alternatives: ['ProWritingAid', 'Hemingway'],
+               tips: 'Use tone detector for audience matching',
+               launchUrl: 'https://grammarly.com'
+           },
+           'Beautiful.ai': {
+               category: 'ai',
+               frequency: 'Part-time',
+               description: 'AI-powered presentation creation',
+               cost: '$12/mo',
+               roi: 'Medium',
+               integrations: ['PowerPoint', 'Google Slides'],
+               alternatives: ['Canva', 'Pitch'],
+               tips: 'Start with smart templates',
+               launchUrl: 'https://beautiful.ai'
+           },
+           'OpusClip': {
+               category: 'ai',
+               frequency: 'Part-time',
+               description: 'AI video clip generation from long content',
+               cost: '$9/mo',
+               roi: 'High',
+               integrations: ['YouTube', 'Social platforms'],
+               alternatives: ['Descript', 'Vidyo.ai'],
+               tips: 'Review AI selections before posting',
+               launchUrl: 'https://opus.pro'
+           },
+
+           // Development & Technical - Part-time
+           'GitHub + GitHub Desktop': {
+               category: 'dev',
+               frequency: 'Part-time',
+               description: 'Code repository and version control',
+               cost: 'Free/$4/mo',
+               roi: 'High',
+               integrations: ['VS Code', 'CI/CD'],
+               alternatives: ['GitLab', 'Bitbucket'],
+               tips: 'Use branches for feature development',
+               launchUrl: 'https://github.com'
+           },
+           'WordPress': {
+               category: 'dev',
+               frequency: 'Part-time',
+               description: 'Website management and blogging',
+               cost: 'Free/Hosting costs',
+               roi: 'Medium',
+               integrations: ['Plugins', 'Themes', 'SEO'],
+               alternatives: ['Webflow', 'Squarespace'],
+               tips: 'Keep plugins updated for security',
+               launchUrl: 'https://wordpress.org'
+           },
+           'Apps Script': {
+               category: 'dev',
+               frequency: 'Part-time',
+               description: 'Google Workspace automation',
+               cost: 'Free',
+               roi: 'High',
+               integrations: ['All Google services'],
+               alternatives: ['Python', 'Zapier'],
+               tips: 'Use triggers for scheduled tasks',
+               launchUrl: 'https://script.google.com'
+           },
+
+           // Business & Marketing - Part-time
+           'GoHighLevel': {
+               category: 'business',
+               frequency: 'Part-time',
+               description: 'Advanced CRM and marketing automation',
+               cost: '$97/mo',
+               roi: 'Medium',
+               integrations: ['SMS', 'Email', 'Funnels'],
+               alternatives: ['ClickFunnels', 'Kartra'],
+               tips: 'Use snapshots for quick setup',
+               launchUrl: 'https://gohighlevel.com'
+           },
+           'ClickSend': {
+               category: 'business',
+               frequency: 'Part-time',
+               description: 'SMS and communication services',
+               cost: 'Usage-based',
+               roi: 'Medium',
+               integrations: ['Zapier', 'APIs'],
+               alternatives: ['Twilio', 'TextMagic'],
+               tips: 'Use for appointment reminders',
+               launchUrl: 'https://clicksend.com'
+           },
+           'Kit (ConvertKit)': {
+               category: 'business',
+               frequency: 'Part-time',
+               description: 'Creator-focused email marketing',
+               cost: '$15/mo',
+               roi: 'Medium',
+               integrations: ['WordPress', 'Zapier'],
+               alternatives: ['Mailchimp', 'ActiveCampaign'],
+               tips: 'Use tags over lists for segmentation',
+               launchUrl: 'https://convertkit.com'
+           },
+           'Google Analytics': {
+               category: 'business',
+               frequency: 'Part-time',
+               description: 'Website traffic analysis',
+               cost: 'Free',
+               roi: 'High',
+               integrations: ['Google Ads', 'Search Console'],
+               alternatives: ['Plausible', 'Matomo'],
+               tips: 'Set up conversion tracking',
+               launchUrl: 'https://analytics.google.com'
+           },
+           'AppSumo': {
+               category: 'business',
+               frequency: 'Part-time',
+               description: 'Software deal hunting and procurement',
+               cost: 'Per purchase',
+               roi: 'High',
+               integrations: ['Lifetime deals'],
+               alternatives: ['StackSocial', 'PitchGround'],
+               tips: 'Read reviews before buying',
+               launchUrl: 'https://appsumo.com'
+           },
+           'StackSocial': {
+               category: 'business',
+               frequency: 'Part-time',
+               description: 'Technology deal marketplace',
+               cost: 'Per purchase',
+               roi: 'High',
+               integrations: ['Software deals'],
+               alternatives: ['AppSumo', 'Humble Bundle'],
+               tips: 'Check for bundle deals',
+               launchUrl: 'https://stacksocial.com'
+           },
+           'Make.com': {
+               category: 'business',
+               frequency: 'Part-time',
+               description: 'Advanced workflow automation',
+               cost: '$9/mo',
+               roi: 'High',
+               integrations: ['1000+ apps'],
+               alternatives: ['Zapier', 'n8n'],
+               tips: 'Use routers for conditional logic',
+               launchUrl: 'https://make.com'
+           },
+           'Dropbox': {
+               category: 'business',
+               frequency: 'Part-time',
+               description: 'File sharing and collaboration',
+               cost: '$12/mo',
+               roi: 'Medium',
+               integrations: ['Slack', 'Zoom', 'Office'],
+               alternatives: ['Google Drive', 'Box'],
+               tips: 'Use Smart Sync to save space',
+               launchUrl: 'https://dropbox.com'
+           },
+           'Trello': {
+               category: 'business',
+               frequency: 'Part-time',
+               description: 'Simple project management for quick tasks',
+               cost: 'Free/$5/mo',
+               roi: 'Medium',
+               integrations: ['Slack', 'Google Drive'],
+               alternatives: ['Asana', 'Monday'],
+               tips: 'Use Power-Ups for extra features',
+               launchUrl: 'https://trello.com'
+           },
+           'Elicit': {
+               category: 'business',
+               frequency: 'Part-time',
+               description: 'AI-powered research assistance',
+               cost: 'Free/$10/mo',
+               roi: 'Medium',
+               integrations: ['Academic papers'],
+               alternatives: ['Semantic Scholar', 'Perplexity'],
+               tips: 'Use for literature reviews',
+               launchUrl: 'https://elicit.org'
+           },
+
+           // Creative & Media - Part-time
+           'Canva': {
+               category: 'content',
+               frequency: 'Part-time',
+               description: 'Quick graphic design and social media content',
+               cost: '$12/mo',
+               roi: 'High',
+               integrations: ['Social platforms', 'Print'],
+               alternatives: ['Adobe Express', 'Simplified'],
+               tips: 'Save brand kits for consistency',
+               launchUrl: 'https://canva.com'
+           },
+           'Adobe Creative Cloud': {
+               category: 'content',
+               frequency: 'Part-time',
+               description: 'Professional video/photo editing (Premiere, Photoshop, Audition)',
+               cost: '$55/mo',
+               roi: 'Medium',
+               integrations: ['All Adobe apps'],
+               alternatives: ['DaVinci Resolve', 'Affinity'],
+               tips: 'Use Creative Cloud Libraries',
+               launchUrl: 'https://adobe.com'
+           },
+           'OBS Studio': {
+               category: 'content',
+               frequency: 'Part-time',
+               description: 'Live streaming and recording',
+               cost: 'Free',
+               roi: 'High',
+               integrations: ['Twitch', 'YouTube', 'Facebook'],
+               alternatives: ['Streamlabs', 'XSplit'],
+               tips: 'Set up scenes for quick switching',
+               launchUrl: 'https://obsproject.com'
+           },
+           'DaVinci Resolve': {
+               category: 'content',
+               frequency: 'Part-time',
+               description: 'Professional video editing',
+               cost: 'Free/$295',
+               roi: 'High',
+               integrations: ['Fairlight', 'Fusion'],
+               alternatives: ['Premiere Pro', 'Final Cut'],
+               tips: 'Use the free version first',
+               launchUrl: 'https://blackmagicdesign.com/products/davinciresolve'
+           },
+           'Riverside': {
+               category: 'content',
+               frequency: 'Part-time',
+               description: 'Remote podcast/video recording',
+               cost: '$15/mo',
+               roi: 'Medium',
+               integrations: ['Zoom', 'Export options'],
+               alternatives: ['Zencastr', 'SquadCast'],
+               tips: 'Record locally for best quality',
+               launchUrl: 'https://riverside.fm'
+           },
+           'StoryDoc': {
+               category: 'content',
+               frequency: 'Part-time',
+               description: 'Interactive presentation creation',
+               cost: '$30/mo',
+               roi: 'Medium',
+               integrations: ['Analytics', 'CRM'],
+               alternatives: ['Pitch', 'Beautiful.ai'],
+               tips: 'Use analytics to improve decks',
+               launchUrl: 'https://storydoc.com'
+           },
+
+           // Sports & Education - Part-time
+           'Pro Pitch AI': {
+               category: 'sports',
+               frequency: 'Part-time',
+               description: 'Pitching analysis and training',
+               cost: '$20/mo',
+               roi: 'Medium',
+               integrations: ['Video analysis'],
+               alternatives: ['Rapsodo', 'PitchLogic'],
+               tips: 'Compare to pro mechanics',
+               launchUrl: '#'
+           },
+           'Driveline Baseball': {
+               category: 'sports',
+               frequency: 'Part-time',
+               description: 'Baseball training methodologies',
+               cost: 'Free/Paid programs',
+               roi: 'High',
+               integrations: ['Training programs'],
+               alternatives: ['Tread Athletics', 'Cressey'],
+               tips: 'Follow their free content first',
+               launchUrl: 'https://drivelinebaseball.com'
+           },
+           'TopVelocity': {
+               category: 'sports',
+               frequency: 'Part-time',
+               description: 'Pitching velocity training',
+               cost: 'Program-based',
+               roi: 'Medium',
+               integrations: ['Training programs'],
+               alternatives: ['Driveline', 'Texas Baseball Ranch'],
+               tips: 'Focus on mechanics first',
+               launchUrl: 'https://topvelocity.net'
+           },
+           '108 Performance': {
+               category: 'sports',
+               frequency: 'Part-time',
+               description: 'Baseball performance training',
+               cost: 'Program-based',
+               roi: 'Medium',
+               integrations: ['Remote coaching'],
+               alternatives: ['Driveline', 'Cressey'],
+               tips: 'Combine with data analysis',
+               launchUrl: 'https://108performance.com'
+           },
+           'Cressey Sports Performance': {
+               category: 'sports',
+               frequency: 'Part-time',
+               description: 'Athletic development education',
+               cost: 'Free/Paid content',
+               roi: 'High',
+               integrations: ['Training content'],
+               alternatives: ['EXOS', 'Altis'],
+               tips: 'Read their blog regularly',
+               launchUrl: 'https://cressysportsperformance.com'
+           },
+
+           // Social & Community - Part-time
+           'Threads': {
+               category: 'social',
+               frequency: 'Part-time',
+               description: 'Text-based social engagement',
+               cost: 'Free',
+               roi: 'Medium',
+               integrations: ['Instagram', 'Meta'],
+               alternatives: ['Twitter/X', 'Mastodon'],
+               tips: 'Cross-post from Instagram',
+               launchUrl: 'https://threads.net'
+           },
+           'Mighty Networks': {
+               category: 'social',
+               frequency: 'Part-time',
+               description: 'Community platform management',
+               cost: '$33/mo',
+               roi: 'Medium',
+               integrations: ['Zapier', 'Stripe'],
+               alternatives: ['Circle', 'Discord'],
+               tips: 'Create courses within community',
+               launchUrl: 'https://mightynetworks.com'
+           },
+
+           // Professional Services - Part-time
+           'Fiverr Pro': {
+               category: 'business',
+               frequency: 'Part-time',
+               description: 'Freelance service procurement',
+               cost: 'Per project',
+               roi: 'Medium',
+               integrations: ['PayPal', 'Direct deposit'],
+               alternatives: ['Upwork', '99designs'],
+               tips: 'Check portfolios carefully',
+               launchUrl: 'https://fiverr.com/pro'
+           },
+           'Upwork': {
+               category: 'business',
+               frequency: 'Part-time',
+               description: 'Professional freelance hiring',
+               cost: '3% fee',
+               roi: 'Medium',
+               integrations: ['Time tracking', 'Payments'],
+               alternatives: ['Fiverr', 'Freelancer'],
+               tips: 'Use fixed-price for defined projects',
+               launchUrl: 'https://upwork.com'
+           },
+           '99designs': {
+               category: 'business',
+               frequency: 'Part-time',
+               description: 'Design service marketplace',
+               cost: 'Per project',
+               roi: 'Medium',
+               integrations: ['Design tools'],
+               alternatives: ['Fiverr', 'DesignCrowd'],
+               tips: 'Run contests for multiple options',
+               launchUrl: 'https://99designs.com'
+           },
+           'PromptHero': {
+               category: 'ai',
+               frequency: 'Part-time',
+               description: 'AI prompt sharing and discovery',
+               cost: 'Free/$9/mo',
+               roi: 'Medium',
+               integrations: ['AI platforms'],
+               alternatives: ['PromptBase', 'God of Prompt'],
+               tips: 'Study top-rated prompts',
+               launchUrl: 'https://prompthero.com'
+           },
+           'OnlyPrompts': {
+               category: 'ai',
+               frequency: 'Part-time',
+               description: 'Prompt engineering resources',
+               cost: '$10/mo',
+               roi: 'Medium',
+               integrations: ['ChatGPT', 'Claude'],
+               alternatives: ['PromptHero', 'PromptBase'],
+               tips: 'Test prompts before buying',
+               launchUrl: '#'
+           },
+
+           // AI Discovery & Research - Part-time
+           'There\'s An AI For That': {
+               category: 'ai',
+               frequency: 'Part-time',
+               description: 'AI tool discovery',
+               cost: 'Free',
+               roi: 'Medium',
+               integrations: ['Web platform'],
+               alternatives: ['Product Hunt', 'Toolify'],
+               tips: 'Check weekly for new tools',
+               launchUrl: 'https://theresanaiforthat.com'
+           },
+           'Toolify': {
+               category: 'business',
+               frequency: 'Part-time',
+               description: 'Software tool discovery',
+               cost: 'Free',
+               roi: 'Medium',
+               integrations: ['Web platform'],
+               alternatives: ['Product Hunt', 'G2'],
+               tips: 'Read user reviews',
+               launchUrl: 'https://toolify.ai'
+           },
+           'NVIDIA tools/SDKs': {
+               category: 'dev',
+               frequency: 'Part-time',
+               description: 'AI development resources',
+               cost: 'Free/Enterprise',
+               roi: 'Medium',
+               integrations: ['CUDA', 'TensorRT'],
+               alternatives: ['AMD ROCm', 'Intel oneAPI'],
+               tips: 'Start with free tier',
+               launchUrl: 'https://developer.nvidia.com'
+           }
+       };
+
+       // Initialize the dashboard
+       function initDashboard() {
+           loadTools();
+       }
+
+       // Load tools into grid
+       function loadTools(filter = 'all') {
+           const grid = document.getElementById('tools-grid');
+           grid.innerHTML = '';
+
+           Object.entries(toolsData).forEach(([name, tool]) => {
+               if (filter === 'all' || tool.category === filter) {
+                   const toolCard = createToolCard(name, tool);
+                   grid.appendChild(toolCard);
+               }
+           });
+       }
+
+       // Create tool card element
+       function createToolCard(name, tool) {
+           const card = document.createElement('div');
+           card.className = 'tool-card';
+           card.onclick = () => showToolDetails(name, tool);
+
+           card.innerHTML = `
+               <div class="tool-header">
+                   <div class="tool-name">${name}</div>
+                   <div class="tool-frequency">${tool.frequency}</div>
+               </div>
+               <div class="tool-description">${tool.description}</div>
+               <div class="tool-tags">
+                   <span class="tool-tag">${tool.category}</span>
+                   <span class="tool-tag">${tool.cost}</span>
+                   <span class="tool-tag">ROI: ${tool.roi}</span>
+               </div>
+           `;
+
+           return card;
+       }
+
+       // Show tool details in modal
+       function showToolDetails(name, tool) {
+           const modal = document.getElementById('tool-modal');
+           const modalBody = document.getElementById('modal-body');
+
+           modalBody.innerHTML = `
+               <h2 style="font-size: 28px; margin-bottom: 20px;">${name}</h2>
+               <p style="color: #aaa; margin-bottom: 30px;">${tool.description}</p>
+               
+               <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 30px;">
+                   <div>
+                       <h3 style="color: #0099ff; margin-bottom: 10px;">Cost & ROI</h3>
+                       <p>Cost: ${tool.cost}</p>
+                       <p>ROI: ${tool.roi}</p>
+                   </div>
+                   <div>
+                       <h3 style="color: #0099ff; margin-bottom: 10px;">Usage</h3>
+                       <p>Frequency: ${tool.frequency}</p>
+                       <p>Category: ${tool.category}</p>
+                   </div>
+               </div>
+
+               <div style="margin-bottom: 30px;">
+                   <h3 style="color: #0099ff; margin-bottom: 10px;">Integrations</h3>
+                   <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+                       ${tool.integrations.map(int => `<span class="tool-tag">${int}</span>`).join('')}
+                   </div>
+               </div>
+
+               <div style="margin-bottom: 30px;">
+                   <h3 style="color: #0099ff; margin-bottom: 10px;">Alternatives</h3>
+                   <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+                       ${tool.alternatives.map(alt => `<span class="tool-tag">${alt}</span>`).join('')}
+                   </div>
+               </div>
+
+               <div style="margin-bottom: 30px;">
+                   <h3 style="color: #0099ff; margin-bottom: 10px;">Pro Tips</h3>
+                   <p style="color: #aaa;">${tool.tips}</p>
+               </div>
+
+               ${tool.launchUrl !== '#' ? `
+               <button class="ai-button" style="width: 100%;" onclick="window.open('${tool.launchUrl}', '_blank')">
+                   Launch ${name}
+               </button>
+               ` : ''}
+           `;
+
+           modal.style.display = 'block';
+       }
+
+       // Close modal
+       function closeModal() {
+           document.getElementById('tool-modal').style.display = 'none';
+       }
+
+       // Filter tools by category
+       function filterTools(category) {
+           // Update active filter
+           document.querySelectorAll('.category-filter').forEach(filter => {
+               filter.classList.remove('active');
+           });
+           event.target.classList.add('active');
+
+           // Reload tools with filter
+           loadTools(category);
+       }
+
+       // Switch between views
+       function switchView(view) {
+           // Update active tab
+           document.querySelectorAll('.nav-tab').forEach(tab => {
+               tab.classList.remove('active');
+           });
+           event.target.classList.add('active');
+
+           // Show selected view
+           document.querySelectorAll('.view').forEach(v => {
+               v.classList.remove('active');
+           });
+           document.getElementById(`${view}-view`).classList.add('active');
+
+           // Initialize Zapier view if needed
+           if (view === 'zapier') {
+               initializeZapierView();
+           }
+       }
+
+       // AI Recommendations
+       function getAIRecommendations() {
+           const query = document.getElementById('ai-query').value;
+           const suggestionsDiv = document.getElementById('ai-suggestions');
+           
+           // Simulate AI processing
+           suggestionsDiv.style.display = 'block';
+           suggestionsDiv.innerHTML = '<p style="color: #aaa;">Analyzing your request...</p>';
+
+           setTimeout(() => {
+               // Mock AI response based on keywords
+               let recommendations = '';
+               
+               if (query.toLowerCase().includes('video')) {
+                   recommendations = `
+                       <div class="suggestion-card">
+                           <h3 style="margin-bottom: 15px;">Recommended Workflow: Video Tutorial Creation</h3>
+                           <div class="workflow-node">
+                               <strong>1. Planning & Script</strong>
+                               <p style="color: #aaa;">ChatGPT for outline → Notion for script organization</p>
+                           </div>
+                           <div class="workflow-node">
+                               <strong>2. Recording</strong>
+                               <p style="color: #aaa;">HRF Cameras for high-speed capture → OBS for screen recording</p>
+                           </div>
+                           <div class="workflow-node">
+                               <strong>3. Editing & Enhancement</strong>
+                               <p style="color: #aaa;">CapCut for editing → TurboScribe for captions</p>
+                           </div>
+                           <div class="workflow-node">
+                               <strong>4. Distribution</strong>
+                               <p style="color: #aaa;">YouTube for long-form → OpusClip for shorts → Buffer for scheduling</p>
+                           </div>
+                           <p style="margin-top: 20px;"><strong>Estimated Time:</strong> 3-4 hours</p>
+                           <p><strong>Tools Needed:</strong> 7 tools from your stack</p>
+                       </div>
+                   `;
+               } else if (query.toLowerCase().includes('analysis') || query.toLowerCase().includes('data')) {
+                   recommendations = `
+                       <div class="suggestion-card">
+                           <h3 style="margin-bottom: 15px;">Recommended Workflow: Performance Data Analysis</h3>
+                           <div class="workflow-node">
+                               <strong>1. Data Collection</strong>
+                               <p style="color: #aaa;">Trackman/Rapsodo for metrics → Export to CSV</p>
+                           </div>
+                           <div class="workflow-node">
+                               <strong>2. Analysis</strong>
+                               <p style="color: #aaa;">Python for data processing → NotebookLM for insights</p>
+                           </div>
+                           <div class="workflow-node">
+                               <strong>3. Visualization</strong>
+                               <p style="color: #aaa;">Excel with Copilot → Simplified for infographics</p>
+                           </div>
+                           <div class="workflow-node">
+                               <strong>4. Reporting</strong>
+                               <p style="color: #aaa;">Google Docs for report → ActiveCampaign for delivery</p>
+                           </div>
+                           <p style="margin-top: 20px;"><strong>Estimated Time:</strong> 2-3 hours</p>
+                           <p><strong>Tools Needed:</strong> 8 tools from your stack</p>
+                       </div>
+                   `;
+               } else {
+                   recommendations = `
+                       <div class="suggestion-card">
+                           <h3 style="margin-bottom: 15px;">General Recommendation</h3>
+                           <p style="color: #aaa;">Based on your query, here are some tool combinations to consider:</p>
+                           <div style="margin-top: 15px;">
+                               <p><strong>For Content Creation:</strong> ChatGPT → Canva → Social Platforms</p>
+                               <p><strong>For Automation:</strong> Zapier → ActiveCampaign → Google Sheets</p>
+                               <p><strong>For Development:</strong> VS Code → Python → GitHub</p>
+                           </div>
+                       </div>
+                   `;
+               }
+
+               suggestionsDiv.innerHTML = recommendations;
+           }, 1500);
+       }
+
+       // Show workflow diagram
+       function showWorkflow(period) {
+           // Hide all workflows
+           document.querySelectorAll('.workflow-diagram').forEach(w => {
+               w.style.display = 'none';
+           });
+
+           // Show selected workflow
+           document.getElementById(`${period}-workflow`).style.display = 'block';
+       }
+
+       // Close modal when clicking outside
+       window.onclick = function(event) {
+           const modal = document.getElementById('tool-modal');
+           if (event.target === modal) {
+               modal.style.display = 'none';
+           }
+       }
+
+       // Initialize on load
+       window.onload = initDashboard;
+
+       // Initialize Zapier View
+       function initializeZapierView() {
+           // Add interactive animations to connection map
+           const appNodes = document.querySelectorAll('.app-node');
+           appNodes.forEach(node => {
+               node.addEventListener('click', function() {
+                   showAppConnections(this.dataset.app);
+               });
+           });
+
+           // Add pulsing animation to active connections
+           animateConnections();
+       }
+
+       // Show app-specific connections
+       function showAppConnections(app) {
+           const connections = {
+               'gmail': {
+                   name: 'Gmail',
+                   zaps: [
+                       'Email → Notion Task Creation',
+                       'Client Inquiry → Gymdesk Lead',
+                       'Newsletter Signup → ActiveCampaign',
+                       'Training Video Request → Workflow Trigger'
+                   ],
+                   webhooks: ['Email Parser Webhook', 'Attachment Processor'],
+                   suggestions: ['Connect to Slack for instant notifications', 'Auto-create calendar events from emails']
+               },
+               'chatgpt': {
+                   name: 'ChatGPT',
+                   zaps: [
+                       'Content Ideas → Social Calendar',
+                       'Client Data → Personalized Plans',
+                       'Video Transcript → Blog Post',
+                       'Performance Analysis → Insights'
+                   ],
+                   webhooks: ['AI Processing Pipeline', 'Content Generation API'],
+                   suggestions: ['Generate weekly newsletters from performance data', 'Create custom training tips']
+               },
+               'notion': {
+                   name: 'Notion',
+                   zaps: [
+                       'Project Updates → Slack Notifications',
+                       'Content Calendar → Social Posts',
+                       'Client Notes → Email Followups',
+                       'Task Completion → Time Tracking'
+                   ],
+                   webhooks: ['Database Change Listener', 'Page Update Trigger'],
+                   suggestions: ['Sync with Google Calendar', 'Auto-generate reports from databases']
+               },
+               'gymdesk': {
+                   name: 'Gymdesk',
+                   zaps: [
+                       'New Client → Welcome Series',
+                       'Booking → Calendar Event',
+                       'Payment → Invoice Generation',
+                       'Check-in → Performance Tracking'
+                   ],
+                   webhooks: ['Client Activity Hook', 'Schedule Changes API'],
+                   suggestions: ['Create performance dashboards', 'Automate renewal reminders']
+               },
+               'slack': {
+                   name: 'Slack',
+                   zaps: [
+                       'Important Emails → Channel Alert',
+                       'Task Complete → Team Update',
+                       'New Content → Review Request',
+                       'Client Milestone → Celebration'
+                   ],
+                   webhooks: ['Slash Command Handler', 'Event Subscription'],
+                   suggestions: ['Build custom bot for client updates', 'Create daily standup automation']
+               },
+               'sheets': {
+                   name: 'Google Sheets',
+                   zaps: [
+                       'Form Data → Analytics Dashboard',
+                       'Performance Metrics → Reports',
+                       'Financial Tracking → Insights',
+                       'Client Progress → Charts'
+                   ],
+                   webhooks: ['Data Import API', 'Real-time Sync'],
+                   suggestions: ['Build automated KPI dashboard', 'Create predictive models']
+               }
+           };
+
+           const appData = connections[app];
+           if (!appData) return;
+
+           // Create modal content
+           const modalContent = `
+               <h2 style="font-size: 28px; margin-bottom: 20px; color: #FF4A00;">${appData.name} Connections</h2>
+               
+               <div style="margin-bottom: 30px;">
+                   <h3 style="color: #0099ff; margin-bottom: 15px;">Active Zaps</h3>
+                   <div style="display: grid; gap: 10px;">
+                       ${appData.zaps.map(zap => `
+                           <div style="background: rgba(255, 74, 0, 0.1); border: 1px solid rgba(255, 74, 0, 0.3); border-radius: 10px; padding: 15px;">
+                               <p>${zap}</p>
+                           </div>
+                       `).join('')}
+                   </div>
+               </div>
+
+               <div style="margin-bottom: 30px;">
+                   <h3 style="color: #0099ff; margin-bottom: 15px;">Available Webhooks</h3>
+                   <div style="display: grid; gap: 10px;">
+                       ${appData.webhooks.map(webhook => `
+                           <div style="background: rgba(0, 153, 255, 0.1); border: 1px solid rgba(0, 153, 255, 0.3); border-radius: 10px; padding: 15px;">
+                               <p>${webhook}</p>
+                           </div>
+                       `).join('')}
+                   </div>
+               </div>
+
+               <div>
+                   <h3 style="color: #0099ff; margin-bottom: 15px;">💡 Automation Ideas</h3>
+                   <div style="display: grid; gap: 10px;">
+                       ${appData.suggestions.map(suggestion => `
+                           <div style="background: rgba(76, 175, 80, 0.1); border: 1px solid rgba(76, 175, 80, 0.3); border-radius: 10px; padding: 15px;">
+                               <p>${suggestion}</p>
+                           </div>
+                       `).join('')}
+                   </div>
+               </div>
+
+               <button class="ai-button" style="width: 100%; margin-top: 20px;" onclick="window.open('https://zapier.com/app/zaps', '_blank')">
+                   Create New ${appData.name} Zap
+               </button>
+           `;
+
+           // Show in modal
+           const modal = document.getElementById('tool-modal');
+           const modalBody = document.getElementById('modal-body');
+           modalBody.innerHTML = modalContent;
+           modal.style.display = 'block';
+       }
+
+       // Animate connection lines
+       function animateConnections() {
+           const lines = document.querySelectorAll('.connection-line');
+           lines.forEach((line, index) => {
+               setTimeout(() => {
+                   line.style.animation = 'pulse 2s ease-in-out infinite';
+               }, index * 200);
+           });
+       }
+
+       // Add pulse animation
+       const style = document.createElement('style');
+       style.textContent = `
+           @keyframes pulse {
+               0%, 100% { opacity: 0.7; }
+               50% { opacity: 1; box-shadow: 0 0 20px currentColor; }
+           }
+       `;
+       document.head.appendChild(style);
+   </script>
+</body>
+</html>
